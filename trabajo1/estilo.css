@@ -1,0 +1,428 @@
+.features {
+    margin-top: 4rem;
+  }
+  
+  .features-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .feature {
+    text-align: center;
+    padding: 0 1rem;
+   max-height: auto;
+   margin: 0;
+   overflow: hidden;
+  }
+  
+  .feature > p {
+    padding: 1rem 0px;
+    padding-left: 0%;
+    padding-top: 5%;
+    padding-bottom: 22px;
+    padding-right: 0px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  #ingredientesfrescos{
+    padding-bottom: 54px;
+  }
+  #esenciaartesanal{
+    padding-bottom: 38px;
+  }
+  .feature > img {
+    width: 100%;
+    border-radius: 20px;
+    max-width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    vertical-align: middle;
+  
+  }
+ 
+  
+  .feature-title {
+    font-size: 2rem;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 598px) {
+    .features-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .hero-title,
+    .hero-button,.hero,.navbar,.footer,.feature
+    p {
+      font-size: 14px; 
+    }
+    .hero-title{
+      font-size: 20px;
+    }
+    body{
+      font-size: 14px;
+    }
+  }
+
+@media(min-width: 287px){
+.feature-title{
+  font-size: 30px;
+ 
+}
+}
+  .footer {
+  
+    flex-direction: column;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3rem;
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .links{
+    text-align: center;
+  }
+  .links a {
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 300ms;
+   display: inline-block;
+   text-align: center;
+  }
+  .links a:hover{
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    scale: 1.025;
+    padding: 0.300rem;
+    box-shadow: 1px 2px 4px var(--black-color);
+    
+    }
+  
+  .links ul {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.8rem;
+   justify-content: center;
+   padding: 0;
+   list-style: none;
+  }
+  
+  .copyright {
+    font-family: Montserrat;
+  }
+  
+  .copyright p {
+    padding: 0.25rem 0;
+  }
+  
+  .footer-circle {
+    width: 120%;
+    height: 120%;
+    position:absolute;
+    bottom: -120px;
+    z-index: -2;
+    background-color: var(--primary-color);
+    border-radius: 50% 50% 0 0;
+ 
+  }
+  
+  .footer-floating {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%, 30%);
+    z-index: -1;
+  }
+  .footer2-floating {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-15deg) translate(10%, 30%);
+  }
+  
+  .brand-copy {
+    font-weight: bold;
+  }
+
+  .hero {
+    position: relative;
+    padding-bottom: 4rem;
+  }
+  
+  .plate-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .plate {
+    width: 120px;
+    height: auto;
+    padding: 1rem 0;
+  }
+  
+  .plate-circle {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    transform: translate(0, -45%);
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 400px;
+  }
+ 
+  .hero-button {
+    background-color: var(--black-color);
+    color: white;
+    padding: 0.75em 1em;
+    border-radius: 20px;
+    width: fit-content;
+    border: 1px solid var(--black-color);
+    transition: all;
+    transition-duration: 300ms;
+  }
+   button > a{
+    text-decoration: none;
+  }
+  .left-floating {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(15deg) translate(-10%, 20%);
+  }
+  
+  .right-floating {
+    width: 120px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-15deg) translate(10%, 30%);
+  }
+  
+  .logo-bar {
+    position: absolute;
+    top: 0;
+  }
+  
+  .hero-button:hover {
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    scale: 1.025;
+  }
+
+  .navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+
+
+:root {
+    --primary-color: #fff6e7;
+    --black-color: #170102;
+  }
+  
+  main {
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+  }
+  
+  .text-serif {
+    font-family: "DM Serif Display", serif;
+  }
+.actions {
+    cursor: pointer;
+    color: white;
+    padding: 0.75em 1em;
+    border-radius: 20px;
+    width: fit-content;
+    transition: all;
+    transition-duration: 300ms;
+}
+.actions:hover{
+  color: white;
+  background: var(--primary-color);
+  color: var(--black-color);
+  border: 1px solid var(--primary-color);
+  scale: 1.025;
+  box-shadow: 1px 2px 4px var(--black-color);
+}
+
+
+
+@import "reset.css";
+
+@import "variables.css";
+@import "navbar.css";
+@import "hero.css";
+
+@import "features.css";
+@import "footer.css";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+button,
+audio,
+video {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}*/
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

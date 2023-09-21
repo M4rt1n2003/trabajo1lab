@@ -1,0 +1,132 @@
+body{
+    font-size: 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+  
+.logo-bar {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+  }
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .left-floating {
+    width: 150px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transform: rotate(15deg) translate(-10%, 20%);
+  }
+  
+  .right-floating {
+    width: 120px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    transform: rotate(-15deg) translate(10%, 30%);
+    margin-top: 7px;
+  }
+  .plate {
+    width: 120px;
+    height: auto;
+    padding: 1rem 0;
+  }
+  .plate-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .plate-circle {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    transform: translate(0, -45%);
+  }
+  
+
+.datos{
+
+    text-align: center; 
+    align-items: center;
+    flex-direction: column;
+     background-color: black;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 4px black;
+    color:white;
+    margin-top: -19px;
+  
+}
+
+
+ 
+  :root {
+    --primary-color: #fff6e7;
+    --black-color: #170102;
+  }
+
+.links ul{
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 300ms;
+   display: inline-block;
+   text-align: left;
+   margin-top: -191px;
+   margin-left: 331px;
+}
+
+.links a:hover{
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    scale: 1.025;
+    padding: 0.300rem;
+    box-shadow: 1px 2px 4px var(--black-color);
+    
+    }
+ 
+    .actions {
+        cursor: pointer;
+        color: white;
+        padding: 0.75em 1em;
+        border-radius: 20px;
+        width: fit-content;
+        transition: all;
+        transition-duration: 300ms;
+    }
+    .actions:hover{
+      color: white;
+      background: var(--primary-color);
+      color: var(--black-color);
+      border: 1px solid var(--primary-color);
+      scale: 1.025;
+      box-shadow: 1px 2px 4px var(--black-color);
+    }
+    
+  @import "reset.css";
+
+  @import "variables.css";
+  @import "navbar.css";
+  @import "hero.css";
+  
+  @import "features.css";
+  @import "footer.css";
